@@ -1,0 +1,18 @@
+[
+    {
+        "SAMPLE":"/Users/victor/Documents/decompile/reversecode/chapter5/5.2/5.2.1/crackme0502.apk"
+    },
+    {
+        "BASE":"AndroidOS",
+        "NAME":"DroidDream",
+        "SIGNATURE":[
+            {
+                "TYPE":"METHSIM",
+                "CN":"Lcom/droider/crackme0502/MainActivity$SNChecker;",
+                "MN":"isRegistered",
+                "D":"()Z"
+            }
+        ],
+        "BF":"0"
+    }
+]

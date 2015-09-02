@@ -6,12 +6,12 @@ PATH_FORMULA = ../formula/
 CUROS = $(shell uname -s)
 
 ifeq ($(CUROS),Darwin)
-LDFLAGS +=	-lm -lbz2 -lz -llzma -lsnappy -lmuparser -lpython
+LDFLAGS +=	-lm -lbz2 -lz -llzma -lsnappy -lmuparser -L/usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config -lpython2.7
 else
 LDFLAGS +=	-lm -lbz2 -lz -llzma -lsnappy -lmuparser
 endif
 
-CFLAGS  += 	-Wall -fPIC -I/usr/include/python2.7/ -I$(PATH_SIMILARITY) -I$(PATH_FORMULA)
+CFLAGS  += 	-Wall -fPIC -I/usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/include/python2.7  -I$(PATH_SIMILARITY) -I$(PATH_FORMULA)
 
 mkdir	=	mkdir -p
 CD      =       cd

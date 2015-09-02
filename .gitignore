@@ -1,2 +1,11 @@
 *.pyc
 *.pyo
+*~
+*.o
+out
+elsim/elsim/*
+!elsim/elsim/*/*.cc
+!elsim/elsim/*/*.c
+!elsim/elsim/*/*.h
+!elsim/elsim/*/*.py
+!elsim/elsim/*/Makefile

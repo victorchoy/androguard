@@ -165,7 +165,7 @@ def main(options, arguments):
         if options.new != None:
           new = False
 
-        library = True
+        library = False
         if options.library != None:
             library = options.library
             if options.library == "python":
